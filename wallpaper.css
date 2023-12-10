@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+}
+
+.navbar {
+    background-color: purple;
+    height: 60px;
+}
+
+nav  {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.title {
+    background-color: purple;
+}
+    
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: fantasy;
+}
+
+.wallpapers {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    gap: 30px;
+    justify-content: center;
+}
+
+.wallpaper {
+    background-color: black;
+    text-align: center;
+}
+
+.wallpaper img {
+    max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .wallpapers {
+        grid-template-columns: repeat(2, 400px);
+    }
+}
+
+@media (max-width: 50px) {
+    .wallpapers {
+        grid-template-columns: repeat(1, 50px);
+    }
+}
+footer {
+    background-color: purple;
+    color: white;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
